@@ -1,0 +1,57 @@
+/* Estilos para Modo Oscuro */
+body.modo-oscuro {
+  background-color: #1a1a1a !important;
+  color: #f0f0f0 !important;
+}
+
+body.modo-oscuro .encabezado,
+body.modo-oscuro .seccion,
+body.modo-oscuro .hero-tarjeta,
+body.modo-oscuro .carrito-seccion,
+body.modo-oscuro footer {
+  background-color: #2b2b2b !important;
+  color: #ffffff !important;
+}
+
+/* Estilos para el Carrito de Compras */
+.carrito-seccion {
+  background-color: var(--crema, #f9f9f9);
+  border: 2px solid var(--cafe, #5b321f);
+  padding: 25px;
+  margin: 30px auto;
+  border-radius: 12px;
+  max-width: 800px;
+}
+
+.lista-carrito {
+  list-style: none;
+  padding: 0;
+  margin: 15px 0;
+}
+
+.item-carrito {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.btn-eliminar {
+  background-color: #d9534f;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-vaciar {
+  background-color: #c9302c;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 10px;
+}

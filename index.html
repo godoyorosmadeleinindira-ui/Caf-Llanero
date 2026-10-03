@@ -1,0 +1,62 @@
+<<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Café Llanero - Tienda Web</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+  <!-- Encabezado -->
+  <header class="encabezado">
+    <div class="contenedor navbar">
+      <div class="logo">Café Llanero</div>
+      <button id="btn-theme" class="boton">Modo Oscuro 🌙</button>
+    </div>
+  </header>
+
+  <!-- Sección de Productos -->
+  <main class="contenedor seccion">
+    <h2>Nuestros Productos</h2>
+    <div class="tarjetas-menu">
+      <div class="hero-tarjeta">
+        <h3>Café Especial Llanero</h3>
+        <p>Precio: $15.000</p>
+        <button class="boton btn-agregar" data-id="1" data-nombre="Café Especial Llanero" data-precio="15000">Agregar al Carrito</button>
+      </div>
+
+      <div class="hero-tarjeta">
+        <h3>Pan de Arroz Tradicional</h3>
+        <p>Precio: $5.000</p>
+        <button class="boton btn-agregar" data-id="2" data-nombre="Pan de Arroz Tradicional" data-precio="5000">Agregar al Carrito</button>
+      </div>
+
+      <div class="hero-tarjeta">
+        <h3>Combo Llanero</h3>
+        <p>Precio: $18.000</p>
+        <button class="boton btn-agregar" data-id="3" data-nombre="Combo Llanero" data-precio="18000">Agregar al Carrito</button>
+      </div>
+    </div>
+
+    <!-- Módulo del Carrito de Compras -->
+    <section class="carrito-seccion">
+      <h2>Carrito de Compras</h2>
+      <ul id="lista-carrito" class="lista-carrito">
+        <!-- Los elementos agregados aparecen aquí dinámicamente -->
+      </ul>
+      <div class="total-container">
+        <h3>Total a Pagar: $<span id="total-pago">0</span></h3>
+      </div>
+      <button id="btn-vaciar" class="btn-vaciar">Vaciar Carrito</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Café Llanero - Todos los derechos reservados</p>
+  </footer>
+
+  <!-- Script JS vinculado antes del cierre de body -->
+  <script src="js/script.js"></script>
+</body>
+</html>
